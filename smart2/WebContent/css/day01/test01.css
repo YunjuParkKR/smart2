@@ -1,0 +1,7 @@
+@CHARSET "UTF-8"; /* 이 첫 문장은 지워도 되는 문장임. */
+		.title {
+			padding: 10px;
+			text-align: center;
+			background-color: dodgerblue;
+			color: white;
+		}
