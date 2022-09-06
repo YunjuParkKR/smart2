@@ -1,0 +1,55 @@
+#frm {
+	display: block;
+	margin: 0px auto;
+	width: 50%;
+}
+label, input {
+/* 	display: block;
+	float: left;  */
+	/* float 속성은 주위 태그와의 간격을 
+		아예 0으로 만드는 속성이므로, 
+		margin 등을 줘도 소용이 없게 된다. */
+	display: inline-block;
+}
+label {
+	width: 30%;
+	text-align: right;
+}
+input {
+	width: 50%;
+	text-align: left;
+	margin-left: 10px;
+}
+
+/* 아래는 input 태그 중 type 속성이 text인 것을 골라
+	속성을 적용시키라는 뜻 */
+input[type="text"] {
+	background-color: lightcyan;
+}
+/* type 속성으로 지칭할 때 아래와 같이 쓸 수도 있다 */
+[type="password"] {
+	background-color: oldlace;
+}
+
+div {
+	margin-bottom: 15px;	
+}
+
+#bfr {
+/* 	clear: left; */
+	text-align: center;
+	margin-top: 30px;
+}
+
+button {
+	width: 200px;
+	height: 40px;
+	font-size: 16pt;
+}
+
+button[type="button"] {
+		background-color: green;
+}
+button[type="submit"] {
+		background-color: orange;
+}

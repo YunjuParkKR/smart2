@@ -1,0 +1,50 @@
+#content {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	background-color: oldlace;
+}
+
+#input {
+	margin-top: 10px;
+}
+
+#lid, #lpw {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	margin: 20px 0 10px 0;	
+}
+
+#iid, #ipw {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	margin: 10px 0;
+	background-color: lightcyan;
+}
+
+#iid:focus, #ipw:focus {
+	background-color: #FAFAD2;
+}
+
+#buttons {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+
+button {
+	width: 30%;
+	height: 50px;
+	background-color: #F5F5F5;
+	border: 1px solid gray;
+	margin-bottom: 15px;
+}
+
+#home:hover, #reset:hover, #submit:hover {
+	font-size: 13pt;
+	background-color: darkgray;
+	color: white;
+}

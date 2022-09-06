@@ -1,0 +1,88 @@
+* {
+	font-size: 13px;
+}
+
+#title {
+	padding: 0 0 17px;
+}
+
+#maintitle {
+	font-size: 14px;
+}
+#subtitle {
+	color: gray;
+	font-size: 12px;
+}
+#righttitle {
+	display: inline-block;
+	float: right;
+}
+#righttitle1 {
+	font-size: 12px;
+}
+#righttitle2 {
+	font-size: 12px;
+	color: gray;
+}
+#righttitle3 {
+	font-size: 12px;
+	color: gray;
+}
+
+.yellow {
+	font-size: 12px;
+	color: #EBAA00;
+}
+
+.smalltext {
+	color: gray;
+	font-size: 12px;
+}
+
+#textbuttons {
+	font-size: 0;
+	margin: 0;
+}
+
+.button {
+	display: inline-block;
+	width: 92px;
+	height: 49px;
+	border: 1px solid gray;
+	font-size: 13px;
+	background-color: white;
+}
+
+.rbutton {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	/* 라운드처리 필요 */
+}
+
+#s2 {
+	padding: 18px;
+	
+}
+
+#s2-1 {
+	display: inline-block;
+	
+	
+}
+
+#s2text_left, #s2text_right {
+	display: inline-block;
+	width: 364px;
+	height: 121px;
+	font-size: 12px;
+	padding: 16px 18px 0 0;
+}
+
+.s2img {
+	display: inline-block;
+	width: 364px;
+	height: 180px;
+}
+
+
