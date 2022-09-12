@@ -1,0 +1,84 @@
+.content {
+	width: 600px;
+	margin: 0 auto;
+}
+.title {
+	background-color: #e91e63;
+	color: white;
+	padding: 12px;
+	text-align: center;
+}
+.fr {
+	margin-top: 20px;
+}
+label {
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+#gfr {
+	float: left;
+	width: 420px;
+}
+#gfr > div {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-bottom: 30px;
+}
+[type="radio"]:checked {
+	width: 50px;
+	height: 50px;
+}
+.ft16 {
+	font-size: 16pt;
+}
+.ft14 {
+	font-size: 14pt;
+}
+.ft12 {
+	font-size: 12pt;
+}
+.bold {
+	font-weight: bold;
+}
+.clearleft {
+	clear: left;
+}
+.width50 { /* ??? */
+	display: inline-block; 
+	width: 50%;
+}
+
+.hr {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.content2 {
+	width: 600px;
+	margin: 20px auto;
+}
+.subj {
+	float: left;
+	width: 420px;
+}
+#row1, #row2, #row3, #row4, #row5 {
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin: 0 0 30px 70px;
+}
+.subj1, .subj2 {
+	display: inline-block;
+	width: 50%;
+}
+.subj1 {
+	float: left;
+}
+.subj2 {
+	float: right;
+}
+/* #oracle, #css, #jquery, #spring, #r {
+	float: right;
+} */

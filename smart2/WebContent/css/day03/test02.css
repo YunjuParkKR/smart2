@@ -1,0 +1,32 @@
+.content {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* 내용물의 사이즈에는 border도,
+	margin도 포함되어 있지 않다! */
+
+/* border는 padding 바깥에 생긴다
+	즉, padding은 border와
+	내용물 사이의 간격이다! */
+.d1 {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding: 50px;
+	background-color: #cddc39;
+	border: 10px solid gray
+}
+/* margin은 border와 다른 border
+	사이의 간격을 말한다! */
+	
+.d2 {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding: 50px;
+	background-color: #cddc39;
+	border: 20px solid black;
+	margin: 50px;
+	border-radius: 10% 30% 50% 360%;
+}

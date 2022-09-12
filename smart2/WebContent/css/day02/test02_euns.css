@@ -1,0 +1,75 @@
+.content {
+	width: 600px;
+	margin: 0 auto;
+}
+.title {
+	background-color: #e91e63;
+	color: white;
+	padding: 12px;
+	text-align: center;
+}
+.fr {
+	margin-top: 20px;
+}
+label {
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+#gfr, #sfr {
+	float: left;
+	width: 420px;
+}
+#gfr > div {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#sfr > div > div {
+	display: inline-block;
+	width: 127px;
+	float: left;
+	padding: 70px;
+}
+#sfr span {
+	font-size: 16pt;
+	font-weight: bold;
+}
+#sfr {
+	margin-bottom: 20px;	
+}
+
+[type="radio"]:checked {
+	width: 50px;
+	height: 50px;
+}
+.ft16 {
+	font-size: 16pt;
+}
+.ft14 {
+	font-size: 14pt;
+}
+.ft12 {
+	font-size: 12pt;
+}
+.bold {
+	font-weight: bold;
+}
+.clearleft {
+	clear: left;
+}
+.width50 { /* ??? */
+	display: inline-block; 
+	width: 50%;
+}
+
+.selfr {
+	clear: left;
+	padding: 20px;	
+}
+
+[type="checkbox"]:checked {
+	width: 30px;
+	height: 30px;
+}

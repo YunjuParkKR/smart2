@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-	<link type="text/css" rel="stylesheet" href="../css/day01/hw_naver recipe04.css">
+<title>Naver 오늘 읽을만한 글 - 레시피</title>
+	<link type="text/css" rel="stylesheet" href="../css/yunju/hw_naver recipe04.css">
+	<link rel="stylesheet" href="../css/fonts/fontawesome-webfont.eot">
 <!-- 스타일은 css 파일로 지정하는 걸로 해볼 것!
  	<style type="text/css">
 		
@@ -11,64 +12,110 @@
  -->
 </head>
 
-<body>
-	<header id="title">
-		<div>
-			<strong id="maintitle">오늘 읽을만한 글</strong>
-			<span id="subtitle">주제별로 분류된 다양한 글 모음</span>
-		</div>
-		<span id="righttitle">
-			<strong id="righttitle1">671</strong><span id="righttitle2">개의 글</span>
-			&;
-			아이콘
-			<span id="righttitle3">관심주제 설정</span>
-		</span>
-	</header>
-
-	<content>
-		<div class="s1">
-			<div id="textbuttons">
-				<input type="button" class="button" id="button1" value="엔터">
-				<input type="button" class="button" id="button2" value="스포츠">
-				<input type="button" class="button" id="button3" value="자동차">
-				<input type="button" class="button" id="button4" value="웹툰">
-				<input type="button" class="button" id="button5" value="경제">
-				<input type="button" class="button" id="button6" value="추천&CenterDot;구독">
-				<input type="button" class="button" id="button7" value="레시피">
-				<input type="button" class="button" id="button8" value="리빙">
+<body id="pad"> <!-- 맨 바깥에 감싸는 태그를 만들어서 전체 폭 크기 주기!!! OK -->
+	<div id="content">
+		<header id="titlemenu">
+			<div id="title">
+				<div id="lefttitle">
+					<span class="bold ft14">오늘 읽을만한 글</span><span class="lightgray ft12 mleft8px">주제별로 분류된 다양한 글 모음</span>
+				</div>
+				<div class="clearfloat" id="righttitle"> <!-- 왜 세로줄 특수기호도 덩달아서 사라진거지??? -->
+					<span class="ft12"><b>671</b><span class="gray">개의 글</span><span class="lightgray">&boxv;</span></span><i class="fa fa-cog" aria-hidden="true"></i></i><span class="ft12 gray">관심주제 설정</span>
+				</div> <!-- font-awesome 기호로 설정 아이콘 텍스트로 넣어보기!!! 왜 안 돼??? 
+							w3schools - icon tutorial - Font Awesome 4 - link부분 복사해서 html파일 head에 붙여넣기,  
+							fontawesome.com/v4/icons에서 cog 검색해서 아이콘 태그 붙여넣기-->
 			</div>
-			<div id="rbtn">
-				<input type="button" class="rbutton" id="button9" value=" < ">
-				<input type="button" class="rbutton" id="button9" value=" > ">
-			</div>
-		</div>
-		<div id="s2">
-			<div id="s2-1">
-				<img class="s2img" src="https://s.pstatic.net/static/www/mobile/edit/20220905/cropImg_728x360_104310806130405888.jpeg"
-						>
-				<div id="s2text_left">
-					<div class="yellow" id="s2text1">[오늘의 푸드TV] Food Atelier 푸드 아뜰리에</div>
-					<strong id="s2text2">향긋함 솔솔~ 겉바속촉 멜론빵 만들기</strong>
-					<div id="s2text3">겉은 바삭한 멜론 쿠키 맛이지만<br>
-						속은 부드럽고 맛있는 매력만점 빵</div>
-					<div class="smalltext" id="s2text4">#홈베이킹 #발효빵</div>
+			<div class="menu clearfloat"> <!-- 메뉴버튼 사이사이에 겹치는 부분 이중선 되는 것 수정하기!!! -->
+				<div class="menubtn"> <!-- 메뉴버튼 양 맨 옆에 빈 공간 생기는 것 수정하기!!! -->
+					<button type="button" name="btn" class="btn" id="entertain">엔터</button>
+					<button type="button" name="btn" class="btn" id="sports">스포츠</button>
+					<button type="button" name="btn" class="btn" id="vehicle">자동차</button>
+					<button type="button" name="btn" class="btn" id="webtoon">웹툰</button>
+					<button type="button" name="btn" class="btn" id="economy">경제</button>
+					<button type="button" name="btn" class="btn" id="recommend">추천&CenterDot;구독</button>
+					<button type="button" name="btn" class="btn" id="recipe">레시피</button>
+					<button type="button" name="btn" class="btn" id="living">리빙</button>
 				</div>
 			</div>
-			<div id="s2-2">
-				<img class="s2img" src="https://s.pstatic.net/static/www/mobile/edit/20220831/cropImg_728x360_103875348677598459.jpeg"
-						>
-				<div id="s2text_right">
-					<div class="yellow" id="s2text1">[오늘의 푸드TV] Food Atelier 푸드 아뜰리에</div>
-					<strong id="s2text2">향긋함 솔솔~ 겉바속촉 멜론빵 만들기</strong>
-					<div id="s2text3">겉은 바삭한 멜론 쿠키 맛이지만<br>
-						속은 부드럽고 맛있는 매력만점 빵</div>
-					<div class="smalltext" id="s2text4">#홈베이킹 #발효빵</div>
+			<div id="rbtn"> <!-- rbtn div 영역 빈 공간 생기는 것 해결하기!!! -->
+				<input type="button" name="btn" class="rbtn" id="rbtn1" value="<">
+				<input type="button" name="btn" class="rbtn" id="rbtn2" value=">">
+			</div>
+		</header>
+		<div class="contents">
+			<div>
+				<div class="section1 borderbottom">
+					<div id="s1-1">
+						<img class="s1img" src="https://s.pstatic.net/static/www/mobile/edit/20220831/cropImg_728x360_103876002892127053.jpeg">
+						<div id="s1t">
+							<div class="s1t1 ft12 yellow bold">[푸드클래스] 이밥차</div>
+							<div class="s1t1 ft13 bold margintop6">누구에게나 환영받는 '버섯불고기 버터밥'</div>
+							<div class="s1t1 ft13 margintop5">밥과 함께 먹는 불고기는 간간하게!<br>
+								고소한 풍미와 쫄깃한 식감 대폭발</div>
+							<div class="s1t1 ft12 gray margintop4">#소불고기 #버섯솥밥</div>
+						</div>
+					</div>
+					<div id="s1-2">
+						<img class="s1img" src="https://s.pstatic.net/static/www/mobile/edit/20220906/cropImg_728x360_104396314619484311.jpeg">
+						<div id="s1t">
+							<div class="s1t2 ft12 yellow bold">[푸드클래스] 만개의 레시피</div>
+							<div class="s1t2 ft13 bold margintop6">질리지 않는 분식 요리 10가지 어때요?</div>
+							<div class="s1t2 ft13 margintop5">하나만 먹어도, 여러 가지 함께 먹어도<br>
+								놓칠 수 없는 꿀맛 메뉴들 모았어요</div>
+							<div class="s1t2 ft12 gray margintop4">#국민간식 #맛집따라하기</div>
+						</div>
+					</div>
 				</div>
+				<div class="section2 borderbottom">
+					<div class="s2 margin0"> <!-- 내용 부분 2줄이 아닌 3줄이 되는 것 수정하기!!! 
+													position 속성을 줘서 위로 조금 올리기! 
+													padding-bottom을 주면 크기가 커지기 때문에 다른 속성 크기까지 
+													조절해야 해서 별로다. OK -->
+						<img class="s2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220907_1095%2Fupload_1662542517369ZRm5j.JPEG%22&type=nf340_228">
+						<div class="s2text">
+							<div class="yellow bold ft12">레시피</div>
+							<div class="bold ft13 margintop2">돼지고기 동그랑땡 만들기 두부 동그랑땡 반죽 만드는법 추석음식</div>
+							<div class="ft13 margintop2">#돼지고기동그랑땡 #동그랑땡만들기 #동그랑땡 #동그랑땡반죽 #추석음식 돼지고기 동그랑땡 만들기 두부 동그랑땡 반죽 만드는 법 추석음식 안녕하세요. 팬이맘입니다. 9월에 ...</div>
+							<div class="gray ft12 margintop2">팬이맘 &CenterDot; 1주일 전</div>
+						</div>
+					</div>
+					<div class="s2">
+						<img class="s2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220907_1095%2Fupload_1662542512815kGC5G.JPEG%22&type=nf340_228">
+						<div class="s2text">
+							<div class="yellow bold ft12">레시피</div>
+							<div class="bold ft13 margintop2">참치깻잎전 만들기, 고소한 삼각 꺳잎전 두부깻잎전 만드는 법!(ft.추석음식 종류)</div>
+							<div class="ft13 margintop2">참치깻잎전 만들기, 고소한 삼각 깻잎전 두부깻잎전 만드는 법!(ft.추석음식 종류) 명절음식에 빠지지 않고 하는 깻잎전이에요. 개인적으로 깻잎향을 좋아하기도 하고요, 참치깻잎...</div>
+							<div class="gray ft12 margintop2">산뜻한 요리 &CenterDot; 1주일 전</div>
+						</div>
+					</div>
+					<div class="s2">
+						<img class="s2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220907_1095%2Fupload_1662532414406bzGAM.JPEG%22&type=nf340_228">
+						<div class="s2text">
+							<div class="yellow bold ft12">레시피</div>
+							<div class="bold ft13 margintop2">리얼 '과자 덕후'가 먹어본 CU 핫템 3가지</div>
+							<div class="ft13 margintop2">안녕하세요. 핫템분석으로 돌아온 팜인턴입니다. 오늘 먹어 볼 핫템은 바로 헤이루의 ‘초코버터스틱’과 ‘떡볶이스낵’, ‘카라멜러스크’입니다. 헤이루는 CU의 PB상품 브랜드인데요. ...</div>
+							<div class="gray ft12 margintop2">더농부 &CenterDot; 6일 전</div>
+						</div>
+					</div>
+					<div class="s2">
+						<img class="s2img" src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20220901_1095%2Fupload_1662033546348gtUEo.JPEG%22&type=nf340_228">
+						<div class="s2text">
+							<div class="yellow bold ft12">레시피</div>
+							<div class="bold ft13 margintop2">동태전 만들기 텁텁하지 않고 맛있게 만드는 법 명절전종류 임성근 팁 더한 탱글탱글 동...</div>
+							<div class="ft13 margintop2">명절전종류 동태전만들기 부서지지않고 탱글탱글하게 ! 텁텁하지 않게! 비린 맛 없고 담백해 맛있는 흰살생선 동태 좋아하시나요? 동태살을 포떠서 부치는 동태전은 바로 만들어...</div>
+							<div class="gray ft12 margintop2">바다유리 &CenterDot; 3주일 전</div>
+						</div>
+					</div>
+				</div>
+				<div class="section3"></div>
 			</div>
 		</div>
 		
-	</content>
-
-
+		
+		
+		<!-- 다크 모드로 보기 버튼도 만들어봐야지... -->
+		<footer>
+		</footer>
+	</div>
 </body>
 </html>

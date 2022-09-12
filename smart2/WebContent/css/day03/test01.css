@@ -1,0 +1,36 @@
+/* body 태그 하위의 모든 태그 
+	body * {} */
+
+body > div {
+	width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+/* div 태그의 첫째 자식태그 중
+	클래스가 box인 태그 */
+div:first-child > .box {
+	background-color: #e91e63;
+}
+div:last-child > .box {
+	background-color: #cddc39;
+}
+/* 주의!! 태그 시 : 뒤에 공백이 
+	있으면 안 됨!!! */
+
+/* 첫 번째 박스그룹 중 짝수번째 
+	박스들에만 보더 주기 */
+div:first-child > .box:nth-child(2n) {
+	border: 3px solid blue;
+}
+
+div:last-child > .box:nth-child(3n):hover {
+	border-radius: 50%;
+}

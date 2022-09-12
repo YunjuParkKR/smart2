@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector2</title>
+	<link type="text/css" rel="stylesheet" href="../css/day02/test02.css">
+</head>
+<body>
+<!-- 
+	radio 버튼과 checkbox 태그 중 선택된 태그들만 크기를 키워보자.
+	사이즈는 20px * 20px
+		컴퓨터 연산자 * : 곱하기
+		컴퓨터 연산자 / : 나누기
+		컴퓨터 연산자 + : 더하기
+		컴퓨터 연산자 - : 빼기		
+		컴퓨터 연산자 % : 나머지를 구하는 연산자		
+ -->
+	<div class="content">
+		<h1 class="title">Checked 상태 선택자</h1>
+		<div class="fr">
+			<label class="ft16 bold">성 별 : </label>
+			<div id="gfr">
+				<div>
+					<input type="radio" name="gen" value="M"> <span class="ft16 bold">남자</span>
+				</div>
+				<div>
+					<input type="radio" name="gen" value="W"> <span class="ft16 bold">여자</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hr">
+		<hr class="clearleft" class="width50">
+	</div>
+	<div class="content2">
+		<label class="ft16 bold">수강과목 : </label>
+		<div class="subj">
+			<div id="row1">
+				<div class="subj1">
+					<input type="checkbox" name="subj" value="java"> <span>Java</span>
+				</div>
+				<div class="subj2" id="oracle">
+					<input type="checkbox" name="subj" value="oracle"> <span>Oracle</span>
+				</div>			
+			</div>
+			<div id="row2">
+				<div class="subj1 clearleft">
+					<input type="checkbox" name="subj" value="html"> <span>HTML</span>
+				</div>
+				<div class="subj2" id="css">
+					<input type="checkbox" name="subj" value="css"> <span>CSS</span>
+				</div>
+			</div>
+			<div id="row3">
+				<div class="subj1 clearleft">
+					<input type="checkbox" name="subj" value="js"> <span>JavaScript</span>
+				</div>
+				<div class="subj2" id="jquery">
+					<input type="checkbox" name="subj" value="jquery"> <span>jQuery</span>
+				</div>
+			</div>
+			<div id="row4">
+				<div class="subj1 clearleft">	
+					<input type="checkbox" name="subj" value="jsp"> <span>JSP</span>
+				</div>	
+				<div class="subj2" id="spring">	
+					<input type="checkbox" name="subj" value="spring"> <span>Spring</span>
+				</div>
+			</div>
+			<div id="row5">
+				<div class="subj1 clearleft">
+					<input type="checkbox" name="subj" value="python"> <span>Python</span>
+				</div>
+				<div class="subj2" id="r">
+					<input type="checkbox" name="subj" value="r"> <span>R</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

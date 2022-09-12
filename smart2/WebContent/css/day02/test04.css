@@ -1,0 +1,34 @@
+.content {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	padding: 15px;
+	color: white;
+	background-color: #e91e63
+}
+
+.fr {
+	margin-top: 40px;
+}
+
+.box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
+}
+/* hover: 클래스가 box인 태그에
+	마우스가 올려진 동안을 의미 */
+.box:hover {
+	background-color: #cddc39;
+	cursor: pointer;
+}
+/* active: 클래스가 box인 태그를 
+	누르고 있는 동안을 의미 */
+.box:active {
+	border-radius: 50%;
+	background-color: #FF5722;
+}
