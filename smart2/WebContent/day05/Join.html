@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+	<link type="text/css" rel="stylesheet" href="../css/w3.css">
+	<link type="text/css" rel="stylesheet" href="../css/day05/join.css">
+</head>
+<body>
+	<div class="w3-content mxw70">
+		<div>
+			<h1 class="w3-center w3-round-large w3-pink bold">회원가입</h1>
+		</div>
+		<div class="w3-col w3-card-4 w3-round-large mgt20 pdtb20 mgtb20">
+			<div class="w3-col">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="name">이 름 : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="name" id="name" class="w3-col m10 w3-input w3-border w3-round-medium">
+				</div>
+			</div>
+			
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="id">I D : </label>
+				</div>
+				<div class="w3-col m9">
+					<div class="w3-col m10">
+						<input type="text" name="id" id="id" class="w3-col m9 w3-input w3-border w3-round-medium">
+						<div class="w3-col m2 w3-purple w3-hover-cyan w3-button w3-right w3-round-medium">check</div>
+					</div>
+					<div>
+					</div>
+				</div>	
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="pw">P W : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border w3-round-medium">
+				</div>
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="repw">P W  확인 : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="password" name="repw" id="repw" class="w3-col m10 w3-input w3-border w3-round-medium">
+				</div>
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="email">E-Mail : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="email" id="email" class="w3-col m10 w3-input w3-border w3-round-medium">
+				</div>
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="phone">Phone : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="phone" id="phone" class="w3-col m10 w3-input w3-border w3-round-medium">
+				</div>
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="gen">Gender : </label>
+				</div>
+				<div class="w3-col m9">
+					<div class="w3-col m10 w3-center">
+						<div class="w3-half mgt5">
+							<input type="radio" name="gen" id="genw" class="w3-col m3 w3-radio w3-left">
+							<label for="genw" class="w3-col m3 w3-text-gray ft18 bold">여자</label>
+						</div>
+						<div class="w3-half mgt5">
+							<input type="radio" name="gen" id="genm" class="w3-col m3 w3-radio w3-left">
+							<label for="genm" class="w3-col m3 w3-text-gray ft18 bold">남자</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col mgt5">
+				<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bold">
+					<label for="avatar">Avatar : </label>
+				</div>
+				<div class="w3-col m9"> <!-- 각 아바타 이미지에 왜 padding이 8px씩 들어가지??? 갑자기 패딩이 사라지고 양옆 마진이 5px씩 붙었음?? --> 
+					<div class="w3-col m10 mgt5 w3-center">
+						<div class="ib w3-center mgt5">
+							<label for="imgw1b"><img src="../img/img_avatar4.png" id="imgw1" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgw1b" class="w3-radio">
+						</div>	
+						<div class="ib w3-center">
+							<label for="imgw2b"><img src="../img/img_avatar5.png" id="imgw2" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgw2b" class="w3-radio">
+						</div>
+						<div class="ib w3-center">
+							<label for="imgw3b"><img src="../img/img_avatar6.png" id="imgw3" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgw3b" class="w3-radio">
+						</div>
+					</div>
+					<div class="w3-col m10 mgt5 w3-center">
+						<div class="ib w3-center">
+							<label for="imgm1b"><img src="../img/img_avatar1.png" id="imgm1" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgm1b" class="w3-radio">
+						</div>	
+						<div class="ib w3-center">
+							<label for="imgm2b"><img src="../img/img_avatar2.png" id="imgm2" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgm2b" class="w3-radio">
+						</div>
+						<div class="ib w3-center">
+							<label for="imgm3b"><img src="../img/img_avatar3.png" id="imgm3" class="w3-col w3-third w3-input w3-border img"></label>
+							<input type="radio" name="img" id="imgm3b" class="w3-radio">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="w3-col w3-round-large hidden mgt20 mgb20">
+			<div>
+				<div class="w3-col w3-third w3-green w3-hover-lime w3-button">home</div>
+				<div class="w3-col w3-third w3-orange w3-hover-yellow w3-button">reset</div>
+				<div class="w3-col w3-third w3-blue w3-hover-cyan w3-button">join</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>네이버 : 로그인</title>
+	<link type="text/css" rel="stylesheet" href="../css/yunju/naver login page02.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- 각 버튼 기능 넣기!!! -->
+<body>
+	<header>
+		<!-- 드롭다운 선택목록 위치 absolute로 해도 화면 넓이에 따라 움직이지 않게 하는 방법??? -->
+		<!-- 드롭다운 선택목록 디자인 변경 어떻게??? -->
+		<div id="selectlan">
+			<form id="language">
+				<select name="언어선택">
+					<option value="1" selected>한국어</option>
+					<option value="2">English</option>
+					<option value="3">중문</option>
+					<option value="4">중문</option>
+				</select>
+			</form>
+		</div>
+		<div id="logo">
+			<a href="https://www.naver.com/"><img id="naverlogo" src="../img/naver_icon2.png"></a>
+		</div>
+	</header>
+	<section>
+		<div id="loginwrap">
+			<!-- 각 메뉴 클릭 시 변화 있도록 자바스크립트 추가하기!!! -->
+			<div id="menuwrap">
+				<div class="menu ft16 gray33">
+					<button type="button" name="menubtn" id="menubtn1" class="menubtn"><i class="menuicon fa fa-sign-in" aria-hidden="true"></i> ID 로그인</button>
+				</div>
+				<div class="menu ft16 gray33">
+					<button type="button" name="menubtn" id="menubtn2" class="menubtn"><i class="menuicon fa fa-address-card-o" aria-hidden="true"></i> 일회용 번호</button>
+				</div>
+				<div class="menu ft16 gray33">
+					<button type="button" name="menubtn" id="menubtn2" class="menubtn"><i class="menuicon fa fa-qrcode" aria-hidden="true"></i> QR코드</button>
+				</div>
+			</div>
+		<!-- 배너 위치 absolute로 해도 화면 넓이에 따라 움직이지 않게 하는 방법??? -->
+			<div id="banner">
+				<span id="bannertxt" class="ft10 green"> PC방 등 공용PC라면 QR코드 로그인이 더 안전해요. X </span>
+			</div>
+			<div class="inputwrap" id="menu1">
+				<div class="inputwrap2">
+					<div class="inputwrap3">
+						<div class="inputicon">
+							<i id="idicon" class="fa fa-user-o" aria-hidden="true"></i>
+						</div>
+						<input type="id" name="id" class="input" placeholder="아이디" required>
+					</div>
+					<div class="inputwrap3">
+						<div class="inputicon">
+							<i id="lockicon" class="fa fa-lock" aria-hidden="true"></i>
+						</div>
+						<input type="password" name="pw" class="input" placeholder="비밀번호" required>
+					</div>
+				</div>
+				<div id="underinput">
+					<div id="underleft">
+						<input type="radio" name="keeplogin" id="keeplogin">
+						<span class="ft14 gray77">로그인 상태 유지</span>
+					</div>
+					<div id="underright">
+						<span class="ft14 gray77">IP보안</span>
+						<input type="radio" name="security" id="security">
+					</div>
+				</div>
+				<div id="buttonloginwrap">	
+					<button type="button" name="login" id="loginbtn" class="ft13"><span class="ft20 white bold">로그인</span></button>
+				</div>
+			</div>
+			<!-- 일회용로그인 -->
+			<div class="inputwrap" id="menu2">
+				<div id="info">
+					<span>네이버앱의</span>
+					<span class="green w500">메뉴 > 설정 &emsp; > 로그인 아이디 관리<br>> 일회용 로그인 번호 받기</span><span>에 보이는 번호를 입력해 주세요.</span>
+				</div>
+				<div class="oneimgfr">
+					<img id="oneimg" src="../img/naver_icon3.png">
+				</div>
+				<div id="buttonnumwrap">	
+					<input type="text" name="num" id="num" value="번호를 입력하세요.">
+				</div>
+				<button type="button" name="login" id="loginbtn" class="ft13 mgt10"><span class="ft20 white bold">로그인</span></button>
+			</div>
+			
+			
+			<!-- QR로그인 -->
+			<div class="qrloginwrap">
+				<div id="info3-1">
+					<div class="center">
+						<img id="qrcode" src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQAAAACFI5MzAAACE0lEQVR42tWYPa6DMBCEF1FQcgTfJFwMCSQuRm7iI7ikQOybWTvKS5Eyk/dSIOIvxWp/Zscxf/exv0wuw2fyLR+Tr2Yd33gkJKP7cRs3H+7uebhsNvzGs5Ks9RX4TIjtTMfNejXhK1LEKJGYb5CpLB5VMRsZpZhERDOaA9i9zOmlcgLCgNAhrM/j8at7BaQOZbF0dJiSwTElLxP8ecLYEMychh0PlgbzghTpCApiftWczIZDFOmOUIUEOcEhexRy4Qj1MacqclGmnErBOQ3djDwJCQqCAYFSdKWKhFuLTUUwp76zLyjVTtHGwZqEhJ1p42mYks1jcQ3ULyVBJtiUj615psHLkpVkcWpTQlUWjkrPr72SjGsNJmYjljeKVCsnIhzRWJhcVxb1ATEd8WgJJAaCBe+yQ7VQJM9CEiMKfTCqJfdnCvugI1QK5wOChfa8l/5ZHxHhspi4NnBImTImq3pYFUEtQqDZF3BPW2tUGUFOaJzmhPaEfZ1KzGn1LhoS7ck5RXuuYeJy29syQtPKiLi367JAdk5TkqZVvmNtwEuuYemyksAvhEx1rT6c2N51JPxqu9Sd9G9h51xIqo8P80jBYmxxsRAShoU9wb29Vf/m0bdCwhslm4Nm/qCJe+5tJWlXevQKrta85stJ3CR6zukWNwlTktqeCXO6hmRGj2YhaXdaj9iqj3+97X6a/M//396SH/tu2mLAhqQ7AAAAAElFTkSuQmCC">
+					</div>
+					<div id="qrtext">
+						<div id="time" class="bold">남은시간</div>
+						<div id="timeleft" class="bold">03분 00초</div>
+					</div>
+				</div>
+				<div id="info3-2">공용 네트워크, 공용 PC라면 안전을 위해<br>QR코드로 로그인해주세요.</div>
+				<div id="info3-3">
+				<span>"네이버 앱 &ensp; 렌즈 &ensp; 를 눌러 QR코드를 스캔하여<br>보이는 숫자 중
+					<strong class="qrnumber">&ensp;77&ensp;</strong>&nbsp;를 선택하면 로그인 됩니다. &ensp;</span>
+				</div>
+				<div class="qrimgfr1">
+					<img id="qrimg1" src="../img/naver_icon3.png">
+				</div>
+				<div class="qrimgfr2">
+					<img id="qrimg2" src="../img/naver_icon3.png">
+				</div>
+				<div class="qrimgfr3">
+					<img id="qrimg3" src="../img/naver_icon3.png">
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+		<div id="find">
+			<a href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR" style="text-decoration: none;" target="_blank" 
+				class="find ft14 gray88 noudb">비밀번호 찾기</a>
+			<a href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR" style="text-decoration: none;" target="_blank" 
+				class="find ft14 gray88 border-left">아이디 찾기</a>
+			<a href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR" style="text-decoration: none;" target="_blank" 
+				class="find ft14 gray88 border-left">회원가입</a>
+		</div>
+		<img id="adimg" src="https://ssl.pstatic.net/melona/libs/1378/1378592/
+				c49524040f3c30074415_20220829215521164.jpg">
+	</section>
+	<footer>
+		<div>
+			<span class="fabove paddingright10">이용약관</span>
+			<span class="fabove border-left"><strong>개인정보처리방침</strong></span>
+			<span class="fabove border-left">책임의 한계와 법적고지</span>
+			<span class="fabove border-left">회원정보 고객센터</span>
+		</div>
+		<div id="funder">
+			<div id="logobottomwrap">
+				<a href="https://www.naver.com/" target="_blank">
+					<img id="logobottom" src="../img/naver_icon2.png">
+				</a>
+			</div>
+			<span>Copyright</span>
+			<span class="black">i NAVER Corp.</span>
+			<span>All Rights Reserved.</span>
+		</div>
+	</footer>
+
+
+<script type="text/javascript"> /* 스크립트 수정하기!!! */
+	function getMenu(el){
+		var mval = el.value;
+		if(gval == 'menubtn1') {
+			document.getElementById('menu1').style.display = 'block';
+			document.getElementById('menu2').style.display = 'none';
+			document.getElementById('menu3').style.display = 'none';
+		}
+		else if(gval == 'menubtn2') {
+			document.getElementById('menu1').style.display = 'none';
+			document.getElementById('menu2').style.display = 'block';
+			document.getElementById('menu3').style.display = 'none';
+		}
+		else if(gval == 'menubtn3') {
+			document.getElementById('menu1').style.display = 'none';
+			document.getElementById('menu2').style.display = 'none';
+			document.getElementById('menu3').style.display = 'block';
+		}
+	}
+</script>
+
+
+</body>
+</html>

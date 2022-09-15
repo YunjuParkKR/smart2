@@ -1,0 +1,14 @@
+.content {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	font-size: 20pt;
+	text-decoration: line-through;
+/* 	text-decoration: overline; */
+/* 	text-decoration: none; */
+/* 	font-style: italic; */
+	font-style: normal;
+}

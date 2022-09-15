@@ -1,0 +1,93 @@
+.bold {
+	font-weight: bold;
+}
+.white {
+	color: white;
+}
+.green {
+	color: #03C75A;
+}
+.gray88 {
+	color: #888888;
+}
+.gray77 {
+	color: #777777;
+}
+.ft10 {
+	font-size: 10px;
+}
+.ft14 {
+	font-size: 14px;
+}
+.ft16 {
+	font-size: 16px;
+}
+#body {
+	text-align: center;
+}
+#header {
+	display: inline-block;
+	width: 743px;
+	height: 138px;
+}
+#logo1 {
+	display: inline-block;
+	width: 155px;
+	height: 30px;
+	margin: 108px 0 0 0;
+	border: 1px solid lime;
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	border: none
+}
+#naverlogo {
+	width: 10em;
+	height: 4.5em;
+	position: relative;
+	top: -1px;
+	left: -4px;
+}
+#notice {
+	border: 1px solid #03C75A;
+	border-radius: 5px;
+}
+.menuline {
+	font-size: 0px;
+}
+.menu {
+	display: inline-block;
+	width: 153.32px;
+	height: 61px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#inline {
+	display: inline-block;
+	width: 458px;
+	height: 255px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.inputvalue {
+	display: inline-block;
+	width: 400px;
+	height: 48px;
+}
+#loginbtn {
+	width: 402px;
+	height: 52px;
+	background-color: #03C75A;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 5px;
+}
+.btn2 {
+	width: 100px;
+	height: 17px;
+	border: none;
+	background-color: ;
+}

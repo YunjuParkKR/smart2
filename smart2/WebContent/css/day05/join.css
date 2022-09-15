@@ -1,0 +1,56 @@
+/* 최대넓이 지정 클래스 */
+.mxw70 {
+	max-width: 700px;
+}
+.ibg {
+	display: inline-block;
+	text-align: center;
+}
+.ib {
+	display: inline-block;
+	width: 100px;
+	height: 150px;
+	text-align: center;
+	margin: 0 5px 0;
+}
+.img {
+	width: 100px;
+	height: auto;
+}
+.bold {
+	font-weight: bold;
+}
+/* 폰트크기 관련 클래스 */
+.ft18 {
+	font-size: 18pt;
+}
+
+
+/* padding */
+.pdr10 {
+	padding-right: 10px;
+}
+.pdtb20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* margin */
+.mgt10 {
+	margin-top: 20px;
+}
+.mgt5 {
+	margin-top: 5px;
+}
+.mgtb20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mgb20 {
+	margin-bottom: 20px;
+}
+
+
+.hidden {
+	overflow: hidden;
+}

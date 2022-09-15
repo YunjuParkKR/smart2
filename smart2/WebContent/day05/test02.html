@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>W3.css</title>
+	<link type="text/css" rel="stylesheet" href="../css/w3.css">
+	<link type="text/css" rel="stylesheet" href="../css/smart.css">
+	<style type="text/css">
+		html, body {
+		height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-display-container" style="height: 100%;">
+		<div class="w3-display-middle mxw700">
+			<h1 class="w3-padding w3-pink w3-center w3-card-4 w3-round-large  mgb20">Smart Login</h1>
+			
+			<div class="w3-col w3-card-4 mgb20 pdh30 w3-round-large">
+				<div class="w3-col mgb15">
+				<!--
+					w3.css 에서
+					w3-center	: 내용물을 가운데 정렬하는 클래스. text-align: center;
+					w3-right-align: 내용물을 오른쪽 정렬하는 클래스. text-align: right;
+					내용물 정렬 시 아래와 같은 클래스를 쓰는 것이 아님에 주의!
+					w3-right	: 이 클래스가 적용된 태그를 float속성이 부여돼서 
+									float: right; 또는 float: left;로 적용시켜주는 클래스
+					w3-left		:  
+				-->
+					<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bd">
+						<label for="id">I D : </label>
+					</div>
+					<div class="w3-col m9">
+						<input type="text" name="id" id="id" class="w3-col m10 w3-input w3-border">
+					</div>
+				</div>
+				<div class="w3-col">
+					<div class="w3-col m3 w3-right-align w3-text-gray pdr10 ft18 bd">
+						<label for="pw">P W : </label>
+					</div>
+					<div class="w3-col m9">
+						<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border">
+					</div>
+				</div>
+			</div>
+			
+			
+				<!-- 버튼 태그 -->
+				<div class="w3-col w3-card-4 w3-round-large hidden">
+					<div class="w3-col w3-third w3-green w3-hover-lime w3-button">home</div>
+					<div class="w3-col w3-third w3-orange w3-hover-khaki w3-button">join</div>
+					<div class="w3-col w3-third w3-blue w3-hover-aqua w3-button">login</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
